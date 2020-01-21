@@ -1,0 +1,17 @@
+.App {
+    height: 100%;
+    width: 100%;
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "NavBar NavBar"
+        "Orders"
+    ;
+}
+
+#NavBar {
+    grid-area: NavBar;
+}

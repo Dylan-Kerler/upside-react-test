@@ -1,0 +1,103 @@
+.NewOrder {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+@media only screen and (min-width: 990px) {
+    .NewOrderDivs {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+                "Toppings Base Size"
+        ;
+    }
+}
+
+.NewOrderDivs {
+    display: grid;
+    padding: 20px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.NewOrderDivs > div {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f1ffec;
+}
+
+.NewOrderTitles {
+    margin-top: -15px;
+    padding: 0;
+    font-size: 18px;
+    color: #17e861;
+    font-weight: bold;
+}
+
+.OrderOptionDiv {
+    background-color: white;
+}
+
+.OrderOptions > div {
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "name price circle"
+    ;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+.OrderOptions > div:hover {
+    transform: scale(1.05)
+}
+
+.OrderOptions > div:hover {
+    cursor: pointer;
+}
+
+.OrderOptions > div > p {
+    margin-left: -10px;
+    margin-top: 18px;
+}
+
+.CircleContainer {
+    position: absolute;
+    right: 0px;
+    margin: 0;
+}
+
+.TopNewOrder {
+    padding-left: 30px;
+    margin-bottom: -10px;
+    margin-top: 5px;
+}
+
+.TopNewOrder > * {
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.TopNewOrder > button {
+    width: 110px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #17e861;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.TopNewOrder > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.TopNewOrder > button:focus {
+    outline: none;
+}

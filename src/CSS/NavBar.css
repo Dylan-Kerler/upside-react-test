@@ -1,0 +1,62 @@
+#NavBar {
+    display: grid;
+    grid-template-areas:
+        "title menus"
+    ;
+
+    width: 100%;
+    height: auto;
+    background-color: #17e861;
+}
+
+@media only screen and (max-width: 500px) {
+    #NavTitle {
+        display: none;
+    }
+
+    #NavBar {
+        min-width: 350px;
+        height: 50px;
+    }
+
+
+    #NavMenuItems {
+        grid-area: menus;
+        text-align: center;
+    }
+}
+
+#NavTitle {
+    grid-area: title;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#NavTitle:hover {
+    cursor: pointer;
+}
+@media only screen and (min-width: 500px) {
+    #NavMenuItems {
+        grid-area: menus;
+        text-align: right;
+    }
+}
+
+#NavMenuItems > button {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    margin-top: 15px;
+    text-align: right;
+    background: none;
+    border: none;
+    font-size: 15px;
+    padding: 0;
+    font-weight: bold;
+}
+
+#NavMenuItems > button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
